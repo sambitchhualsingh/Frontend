@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+        margin:0;
+    }
+    header {
+        padding:20px;
+        background: #aaa;
+    }
+    .menu a {
+        text-decoration: none;
+        background-color: aqua; 
+        color: blue;
+        padding: 14px 16px;
+    }
+
+    .menu a:hover{
+        background:red;
+    }
+    .menu .right{
+        position:absolute;
+        right: 10px;
+        top:6px !important;
+    }
+    .menu .right a{
+        float: left;
+        margin-left: 5px;
+    }
+    section {
+        display: flex;
+        height: 100vh;
+    }
+    aside {
+        background: gold;
+        color: rgb(175, 14, 14);
+        width: 10vw;
+        padding: 20px;
+    }
+    .center {
+        padding: 20px;
+        height: 100vh;
+      
+    }
+    .center {
+        text-align: justify;
+        word-break: break-all;
+        line-height: 25px;
+        
+    }
+    footer {
+        background: black;
+        padding: 20px;
+        text-align: center;
+        color: aqua;
+    }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="#" class="logo">portfolio</a>
+            <div class="right">
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">mywork</a>
+                <a href="#">contact</a>
+
+            </div> 
+
+        </nav>
+    </header>
+    <section>
+        <aside>
+            <p>left sidebar</p>
+        </aside>
+
+        <div class="center">
+            <h3>welcome to HTML 5</h3>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae hic modi voluptatem aspernatur perferendis quibusdam exercitationem, eius nam, quod blanditiis maiores delectus tempora cumque quo necessitatibus quis ipsam adipisci tempore?</P>
+
+
+        </div>
+    
+        <aside>
+            <p>right sidebar</p>
+        </aside>
+    </section>
+
+    <footer>
+        <p>all right reserved.&copy; 2022</p>
+    </footer>
+</body>
+</html>
