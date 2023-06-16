@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td,th{
+            border:1px black solid;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td,th{
+            padding:10px
+        }
+        th{
+            background-color: blue;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h3>table</h3>
+    <table>
+        <tr>
+            <td rowspan="3">DAY</td>
+            <td colspan="4">SEMINAR</td>
+        </tr>
+        <tr>
+            <td colspan="2">Schedule</td>
+            <td rowspan="2">Topics</td>
+        </tr>
+        <tr>
+            <td>Begin</td>
+            <td>End</td>
+        </tr>
+        <tr>
+            <td rowspan="2">MONDAY</td>
+            <td rowspan="2">8.00 a.m</td>
+            <td rowspan="2">5.00 p.m</td>
+            <td>introduction to XML</td>
+        </tr>
+        <tr>
+            <td>validity:dtd and relax ng</td>
+        </tr>
+        <tr>
+            <td rowspan="3">TUESDAY</td>
+            <td>8.00 a,m</td>
+            <td>11.00 a.m</td>
+            <td>Xpath</td>
+        </tr>
+        <tr>
+            <td>11.oo a.m</td>
+            <td>2.00 p.m</td>
+        </tr>
+        <tr>
+            <td>2.00 p.m</td>
+            <td>5.00 p.m</td>
+            <td>XSL Transformation</td>
+        </tr>
+        <tr>
+            <td>WEDNWSDAY</td>
+            <td>8.00 a.m</td>
+            <td>12.00 p.m</td>
+            <td>XSL formating objects</td>
+        </tr>
+    </table>
+</body>
+</html>
