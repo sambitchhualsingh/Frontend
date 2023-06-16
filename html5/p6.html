@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sub{
+            width: 500px;
+            padding: 40px;
+            text-align: center;
+            background-color: aqua;
+            box-shadow: 3px 4px 16px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <h3>DIALOG </h3>
+    <button id="show">show dialog</button>
+
+    <dialog class="sub" id="mydialog">
+        <button id="close" >Hide</button>
+
+        <h3>my dialog heading</h3>
+        <form action="">
+            <label for="">Subscribe Here</label>
+            <input type="email" name="Subscribe" id="Subscribe" placeholder="Enter your email id to Subscribe">
+            <br><br>
+            <input type="submit" value="Subscribe">
+
+        </form>
+    </dialog>
+    <script>
+        var mydialog = document.getElementById("mydialog");
+        document.getElementById("show").onclick= function(){
+            mydialog.show();
+        }
+        document.getElementById("close").onclick= function(){
+            mydialog.close();
+        }
+    </script>
+</body>
+</html>
