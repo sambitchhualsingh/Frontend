@@ -6,20 +6,21 @@
     <title>Document</title>
     <style>
         #myCanvas{
-            width: 300px;
-            height: 300px;
-            border: 2px solid black;
+            width:300px;
+            height:300px;
+            border:2px solid #222;
         }
     </style>
 </head>
 <body>
   <h3>Canvas tag</h3>  
   <canvas id="myCanvas"></canvas>
-       <script>
-            var x =document . getElementById("mycanvas");
-            var s= x.getcontext("2d");
-            s.fillstyle = "#34ff44";
-            s.fillrect( 50, 50, 100, 50);
-       </script>
+  <script>
+    var x = document.getElementById("myCanvas");
+      var s = x.getBoundingClientRect("2d");
+      s.fillStyle = "#34ff44";
+      s.fillRect(50,50,100,50);
+  </script>
+
 </body>
 </html>
