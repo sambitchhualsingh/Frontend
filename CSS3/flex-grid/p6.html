@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            grid-gap:4px;
+        }
+
+        .card {
+            box-shadow: 3px 3px 22px rgba(0,0,0,0.2);
+            padding-bottom: 20px;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: 300px;
+        }
+
+        .card .txt {
+            padding: 12px;
+        }
+
+        .card p {
+            text-align: justify;
+            word-break: break-all;
+            text-indent: 40px;
+        }
+
+        .card a{
+            padding: 12px 14px;
+            background: crimson;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="gallery">
+        <div class="card">
+            <img src="./images/7383028831604862ec47fefee3e8f43f.jpg" alt="card-1">
+            <div class="txt">
+                <h2>Product-1</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi placeat rerum culpa vitae reprehenderit, vero alias quod reiciendis aliquid laborum, aspernatur totam omnis dolor numquam architecto inventore in dolorum officiis?</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/b7f4b3e9e23ccf652bdc6d7003013e8b.jpg" alt="card-1">
+            <div class="txt">
+                <h2>Product-2</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi placeat rerum culpa vitae reprehenderit, vero alias quod reiciendis aliquid laborum, aspernatur totam omnis dolor numquam architecto inventore in dolorum officiis?</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/d96fab0d4bdc5735d4eae13c7be51d50.jpg" alt="card-1">
+            <div class="txt">
+                <h2>Product-3</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi placeat rerum culpa vitae reprehenderit, vero alias quod reiciendis aliquid laborum, aspernatur totam omnis dolor numquam architecto inventore in dolorum officiis?</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/pfeiffer-beach-550x362.webp" alt="card-1">
+            <div class="txt">
+                <h2>Product-4</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi placeat rerum culpa vitae reprehenderit, vero alias quod reiciendis aliquid laborum, aspernatur totam omnis dolor numquam architecto inventore in dolorum officiis?</p>
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
