@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        .container {
+
+            padding: 20px;
+            background-color: slateblue;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .card {
+            max-width: 100%;
+            background-color: gold;
+            padding: 20px;
+            color:#222;
+            height: 300px;
+            margin: 10px;
+        }
+
+        /* mobile input - 576px
+           tabs 1024px - input - 576px
+           laptop/desktop 1440px - input - 1024px
+           4k screens  - input - 1440px
+        */
+        /* screen => a screen value used here , which make sense since many of the media types. we're trying to match are device with screens attached to them */
+
+        @media  screen and (max-width:576px) {
+            .container {
+                background-color: #ccc;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card {
+                background-color: deeppink;
+                color: #fff;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>header -1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque at itaque laborum, sequi nam est vero non, quaerat minima iure molestiae. Fuga culpa, nostrum fugit necessitatibus ut voluptatem deleniti nobis.</p>
+        </div>
+
+        <div class="card">
+            <h3>header -1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam veniam, aperiam cum accusamus doloremque eligendi tempora. Itaque, adipisci amet autem ex officia placeat perspiciatis necessitatibus numquam sunt ab beatae expedita!</p>
+        </div>
+
+        <div class="card">
+            <h3>header -1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam veniam, aperiam cum accusamus doloremque eligendi tempora. Itaque, adipisci amet autem ex officia placeat perspiciatis necessitatibus numquam sunt ab beatae expedita!</p>
+        </div>
+
+        <div class="card">
+            <h3>header -1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam veniam, aperiam cum accusamus doloremque eligendi tempora. Itaque, adipisci amet autem ex officia placeat perspiciatis necessitatibus numquam sunt ab beatae expedita!</p>
+        </div>
+
+    </div>
+</body>
+</html>

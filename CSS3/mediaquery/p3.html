@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* i-Phone */
+        /* iphone-4 */
+
+        @media only screen and (min-device-width:320px) 
+                           and (max-device-width:480px)
+                           and (-webkit-min-device-pixel-ratio: 2) {
+                
+                        /* css code */
+                        body {
+                            background-color: crimson;
+                        }
+        }
+
+
+        @media only screen and (min-device-width:320px) 
+                           and (max-device-width:480px)
+                           and (-webkit-min-device-pixel-ratio: 2)
+                           and (orientation: landscape) {
+                           
+            /* css code protrait/landscape */
+
+            body {
+                background-color: deepskyblue;
+            }
+        }
+
+        /* a) i-phone 6 => min = 375px and max = 667px
+           b) i-phone 6+ , 7+ , 8+ => min = 414px and max=736px 
+           c) i-phone x => min=375px and max= 812px pixel ratio=3 */
+    </style>
+</head>
+<body>
+    <h1>iphone-4</h1>
+</body>
+</html>
