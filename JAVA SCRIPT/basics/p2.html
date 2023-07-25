@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green {
+            color: green;
+        }
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>OPERATORS</h3>
+
+    <!--
+        1. arithmatic operators =  + - * / % 
+        2. logical operators = ! && ||   (not , and , or)
+        3. relational/conditional operators = < > >= <= ==(eaql to)  ===(strictly equal to) !== (not equal to)  
+        4. assignment = += -= *= /= %=     ( a+=10) = ( a = a+10)
+        5.incriment/ decrement
+            pre ++i   --i
+            post i++   i--
+        
+        6. misc  . , ; ""  ''  ()  {}   []  ~  ^  $    #   @   => (arrow operators)
+
+        7. ternary operators -> condition ? "true" : "false";
+        
+    -->
+
+
+    <script>
+         /* 
+         == value
+         === datatype & value
+         */
+
+         if(30 == "30") {
+            console.log('value are equal');
+            document.write(`<h1 class="green"> values are equal </h1>`);
+
+         }else {
+            console.log ('values are not equal');
+            document.write(`<h1 class="red"> values are not equal </h1>`);
+         }
+
+         if(30 === "30") {
+            console.log('value are equal');
+            document.write(`<h1 class="green"> values are equal </h1>`);
+
+         }else {
+            console.log ('values are not equal');
+            document.write(`<h1 class="red"> values are not equal </h1>`);
+         }
+    </script>
+</body>
+</html>

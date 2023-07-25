@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--header script -->
+    <script>
+        /* integer,float,double => number */
+        var a=12; //global
+        const b=33; //global --> defined outside the block
+        let c=44; 
+
+        var x=46;
+
+        document.write("<h2> a = "+ a +"  </h2>");
+
+        document.write('<h2> b = ${b} </h2>');
+
+        //global
+
+        if(x > 10){
+            //block
+        //var y = 12; //global
+        //let a = 455; //block scope
+        //const b = 24; //block
+
+        document.write('<h1> a = ${a} , b = ${b} </h1>'); // a = 12 , b = 33
+        }
+    </script>
+
+</head>
+<body>
+    <!-- body script -->
+
+    <script>
+        //1. body script 
+        //datatype name = value ;    =    nvariable-var
+
+        var isAdmin = false;
+        var title = "Welcome to JS"; /* strign and char => string */
+        var x = 12342.3433;
+        var y = 34.343;
+
+        // array
+        var colors = ["one",2,true];
+
+        //object
+        var user = {
+            //key : value, => property
+            name: "ramesh",
+            email:"ramesh@gamil.com"
+        };
+
+            //function block = behaviours
+            //function name (params)
+        function welcome(name,email) {
+
+        }
+
+        document.write(a);
+        document.write("<h1> Int = "+ a +"</h1>");
+        document.write('<h1> Int = ${a} </h1>'); /* joining string and var = concert */
+        document.write('<h1> isAdmin= ${isAdmin} </h1>');
+        document.write('<h1> title = ${title} </h1>');
+        document.write('<h1> x = ${x} </h1>');
+        document.write('<h1> y = ${y} </h1>');
+        document.write('<h1> color = ${color} </h1>');
+    </script>
+
+    <!-- external script -->
+
+    <script src="ext.js"></script>
+</body>
+</html>
