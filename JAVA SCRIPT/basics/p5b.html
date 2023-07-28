@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        use conditinal to switch  =  add,sub,mul,div,rem a and b
+    </h1>
+    <form onsubmit="codeHandler(event)">
+        <div>
+            <label for="op">Choose An Operation</label>
+            <select name="op" id="op">
+                <option value="add">Addition</option>
+                <option value="sub">Substraction</option>
+                <option value="mul">Multiplecation</option>
+                <option value="div">Division</option>
+                <option value="mod">Modulo</option>
+            </select>
+        </div>
+        <div>
+            <lable for="inpA">Enter input a?</lable>
+            <input type="number" name="inpA" id="inpA" required>
+        </div>
+        <div>
+            <lable for="inpB">Enter input b?</lable>
+            <input type="number" name="inpB" id="inpB" required>
+        </div>
+        <button type="submit">Execute Code</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function codeHandler(event) {
+            event.preventDefault(); //avoid page refresh
+
+            var key = document.getElementById('op').value;
+            var a = document.getElementById('inpA').value;
+            var b = document.getElementById('inpB').value;
+                //constructor - Number , Boolean , String , Array , Object
+            var x = Number(a);
+            var y = Number(b);
+            var res = 0;
+
+            if(key === "add"){
+                res = x + y;
+                document.title = `Addition =${res}`;
+                document.getElementById('result').innerHTML = `<h1> Addition of 2 number = ${res} </h1>`;
+            }
+               else if (key === "sub"){
+                res = x - y;
+                document.title = `Sub =${res}`;
+                document.getElementById('result').innerHTML = `<h1> Sub of 2 number = ${res} </h1>`;
+               }
+               else if (key === "mul"){
+                res = x * y;
+                document.title = `Mul =${res}`;
+                document.getElementById('result').innerHTML = `<h1> Mul of 2 number = ${res} </h1>`;
+               }
+               else if (key == "div") { //x == "true"  x === true
+                        if(x > y) {
+                            res = x / y;
+                        } else {
+                            res = y / x;
+                        }
+                        document.title = `div =${res}`;
+                        document.getElementById('result').innerHTML = `<h1> Div of 2 number = ${res} </h1>`;
+               }
+
+               else if (key === "mod") {
+                if(x > y) {
+                            res = x % y;
+                        } else {
+                            res = y % x;
+                        }
+                        document.title = `Mod =${res}`;
+                        document.getElementById('result').innerHTML = `<h1> Modulo of 2 number = ${res} </h1>`;
+               }
+            else {
+                document.title = `Choose Proper Input`;
+                document.getElementById('result').innerHTML = `<h1>Choose proper operation</h1>`;
+            }
+
+        }
+    </script>
+</body>
+</html>

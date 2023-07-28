@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+            .yellow{ color: yellow;}
+            .green{ color: green;}
+            .blue { color: blue;}
+            .red{ color: red;}
     </style>
 </head>
 <body>
@@ -16,14 +19,14 @@
         var a = Number(x);  /* used to convert the any type into number */
 
         if(a === 123) {
-            document.write(`<h1> ${a} is equal to 123 </h1>`); /* DOM */
+            document.write(`<h1 class="yellow"> ${a} is equal to 123 </h1>`); /* DOM */
 
         } else if(a > 123) {
-            document.write(`<h1> ${a} is greater than 123 </h1>`);
+            document.write(`<h1 class="green"> ${a} is greater than 123 </h1>`);
         } else if(a < 123) {
-            document.write(`<h1> ${a} is less than 123 </h1>`);
+            document.write(`<h1 class="blue"> ${a} is less than 123 </h1>`);
         } else {
-            document.write (`<h1> cheak your input</h1>`);  // other than number
+            document.write (`<h1 class="red"> cheak your input</h1>`);  // other than number
         }
     </script>
 </body>
