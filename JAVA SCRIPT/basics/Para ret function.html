@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Parameter return type function</h1>
+    <script>
+
+        var x = 12;
+        var y = "welcome";
+
+        function sum(a,b) {
+            return a + b;
+        }
+
+        var output = sum(20,30);
+        var output = sum(x,y);
+
+        document.write(`<h3> sum(20,30) = ${output} </h3>`)
+        document.write(`<h3> sum(12,22) = ${ Number(output)} </h3>`)
+    </script>
+</body>
+</html>
