@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+         width: 100%;
+         overflow-x: hidden;
+         height: auto;
+         margin: 0;
+        }
+ 
+        #userInfo {
+         padding: 20px;
+         border: 2px solid #222;
+         width: 100%;
+         display: grid;
+         grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+         grid-gap: 10px;
+        }
+ 
+        #userInfo div {
+         box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+         padding: 20px;
+         text-align: center;
+        }
+ 
+        #userInfo div h3 {
+         text-transform: uppercase;
+         color: slateblue;
+        }
+ 
+        #userInfo div img {
+         border-radius: 50%;
+         object-fit: cover;
+         object-position: center;
+         width: 200px;
+        }
+ 
+        #userInfo div a {
+         padding: 12px 14px;
+         background-color: slateblue;
+         color: #fff;
+         text-transform: capitalize;
+         text-decoration: none;
+        }
+     </style>
+</head>
+<body>
+    <section id="userInfo"></section>
+
+    <script>
+        var products = [
+            {
+                id: 1,
+                title: "iPhone 9",
+                description: "An apple mobile which is nothing like apple",
+                price: 549,
+                discountPercentage: 12.96,
+                rating: 4.69,
+                stock: 94,
+                brand: "Apple",
+                category: "smartphones",
+                thumbnail: "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+                
+            },
+            {
+            id: 2,
+            title: "iPhone X",
+            description: "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+            price: 899,
+            discountPercentage: 17.94,
+            rating: 4.44,
+            stock: 34,
+            brand: "Apple",
+            category: "smartphones",
+            thumbnail: "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+            },
+            {
+            id: 3,
+            title: "Samsung Universe 9",
+            description: "Samsung's new variant which goes beyond Galaxy to the Universe",
+            price: 1249,
+            discountPercentage: 15.46,
+            rating: 4.09,
+            stock: 36,
+            brand: "Samsung",
+            category: "smartphones",
+            thumbnail: "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+    
+            },
+            {
+            id: 4,
+            title: "OPPOF19",
+            description: "OPPO F19 is officially announced on April 2021.",
+            price: 280,
+            discountPercentage: 17.91,
+            rating: 4.3,
+            stock: 123,
+            brand: "OPPO",
+            category: "smartphones",
+            thumbnail: "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+            },
+            {
+            id: 5,
+            title: "Huawei P30",
+            description: "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+            price: 499,
+            discountPercentage: 10.58,
+            rating: 4.09,
+            stock: 32,
+            brand: "Huawei",
+            category: "smartphones",
+            thumbnail: "https://i.dummyjson.com/data/products/5/thumbnail.jpg", 
+            }
+
+        ];
+
+        console.log('products =',products);
+
+
+        var continer = document.querySelector('#userInfo');
+
+        products.forEach(function(val,index){
+            let card = document.createElement('div');
+            let eThumbnail = document.createElement('img');
+            let eTitle = document.createElement('h3');
+            let ePrice = document.createElement('h3');
+            let eDescription = document.createElement('p');
+            let eDiscountPercentage = document.createElement('p');
+            let eRating = document.createElement('p');
+            let eStock = document.createElement('p');
+            let eBrand = document.createElement('h3');
+            let eCategory = document.createElement('p');
+
+            
+
+            eThumbnail.src = val.thumbnail;
+            eThumbnail.alt = "no thumbnail";
+
+            eTitle.textContent = `${val.id} ${val.title}`;
+            ePrice.textContent = val.price;
+            eDescription.textContent = val.description;
+            eDiscountPercentage.textContent = val.discountPercentage;
+            eRating.textContent = val.rating;
+            eStock.textContent = val.stock;
+            eBrand.textContent = val.brand;
+            eCategory.textContent = val.category;
+
+
+            card.appendChild(eThumbnail);
+            card.appendChild(eTitle);
+            card.appendChild(ePrice);
+            card.appendChild(eDescription);
+            card.appendChild(eDiscountPercentage);
+            card.appendChild(eRating);
+            card.appendChild(eStock);
+            card.appendChild(eBrand);
+            card.appendChild(eCategory);
+
+            continer.appendChild(card);
+
+
+
+        });
+
+    </script>
+        
+</body>
+</html>
