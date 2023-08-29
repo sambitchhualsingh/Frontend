@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Parameterised Constructor </h1>
+
+    <script>
+        function Course(ti,du,fe) {
+            this.title = ti;
+            this.fee = fe;
+            this.duration = du;
+        }
+
+                  // instance
+        let x1 = new Course('Javascript', "1month", 1234);
+
+        console.log('x1 =', x1);
+
+        document.write(`<h1> title = ${x1.title} </h1>`);
+        document.write(`<h1> Fee = ${x1.fee} </h1>`);
+        document.write(`<h1> Duration = ${x1.duration} </h1>`);
+
+        // instance
+        let x2 = new Course('React', "1.5month", 5678);
+
+        console.log('x2 =', x2);
+
+        document.write(`<h1> title = ${x2.title} </h1>`);
+        document.write(`<h1> Fee = ${x2.fee} </h1>`);
+        document.write(`<h1> Duration = ${x2.duration} </h1>`);
+
+
+                   // instance
+        let x3 = new Course('node', "1.7month", 12345);
+
+        console.log('x3 =', x3);
+
+        document.write(`<h1> title = ${x3.title} </h1>`);
+        document.write(`<h1> Fee = ${x3.fee} </h1>`);
+        document.write(`<h1> Duration = ${x3.duration} </h1>`);
+    </script>
+</body>
+</html>

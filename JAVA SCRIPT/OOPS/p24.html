@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Class ES-6  ->  group of object (State & Behaviour)</h1>
+    <p>State => variables -> properties </p>
+    <p>Behaviour -> methods </p>
+
+    <script>
+        class User {
+            //built in method
+            constructor() {
+                //prototype => states
+                this.name = "sambit";
+                this.email = "sambit@gmail.com";
+                document.write(`<h3> Constructor method </h3>`);
+            }
+
+            display() {
+                //method => behavioiur
+                document.write(`<h1> name = ${this.name} </h1>`);
+            }
+
+            print(){
+                document.write(`<h1> email = ${this.email} </h1>`);
+            }
+        }
+
+        let x = new User();
+
+        console.log('x = ',x);
+
+        document.write(`<h1> name = ${x.name} </h1>`);
+        document.write(`<h1> email = ${x.email} </h1>`);
+
+        document.write(`<hr>`);
+
+        x.display();
+        x.print();
+
+    </script>
+</body>
+</html>
