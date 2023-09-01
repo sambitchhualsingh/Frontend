@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Deleting properties</h1>
+
+    <script>
+        var x = new Object();
+            x.name = "Tatata Nexon";
+            x.model = 2032;
+            x.color = "red";
+            
+
+            console.log("before delete x =", x);
+
+
+            delete x.model;
+            delete x.name;
+            delete x.color;
+            // Object.setPrototypeOf(x, {});   // cloned object  
+
+            console.log('after delete x =', x);
+    </script>
+</body>
+</html>
