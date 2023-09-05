@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>find simple interest</h1>
+
+    <form autocomplete="off" onsubmit="submitHandler(event)">
+        <div>
+            <label for="pr">Enter Princeple value(P)</label>
+            <input type="number" name="pr" id="pr" required>
+        </div>
+        <div>
+            <label for="rate">Rate of interest (R)</label>
+            <input type="text" name="rate" id="rate" required>
+        </div>
+        <div>
+            <label for="yr">year (T)</label>
+            <input type="number" name="yr" id="yr" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Calculate">
+        </div>
+    </form>
+
+    
+    <div id="output"></div>
+
+
+    <script src="./js/p2.js"></script>
+</body>
+</html>

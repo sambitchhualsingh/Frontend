@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h3>Largest of Two Number </h3>
+    </div>
+    <div>
+    <form method="post" onsubmit="submitHandler(event)">
+        <div>
+            <label for="inp1">Input-1</label>
+            <input type="number" name="inp1" id="inp1" required>
+        </div>
+        <div>
+            <label for="inp2">Input-2</label>
+            <input type="number" name="inp2" id="inp2" required>
+        </div>
+
+
+        <div>
+            <label for="logic">Choose logic</label>
+            <select name="logic" id="logic">
+                <option value="null">Choose logic</option>
+                <option value="condition">Condition</option>
+                <option value="math">Math</option>
+                <option value="operator">Operator</option>
+            </select>
+        </div>
+
+
+        <div>
+            <input type="submit" value="find">
+        </div>
+    </form>
+    </div>
+
+
+    <div id="result"></div>
+
+    <script>
+        let inp1 = document.getElementById('inp1');
+        let inp2 = document.getElementById('inp2');
+        let result = document.getElementById('result');
+        let logic = document.getElementById('logic');
+
+
+function condi(a,b) {
+    if(a > b) {
+        result.innerHTML = `<h1> ${a} is Largest Number</h1>`
+    } else {
+        result.innerHTML = `<h1> ${b} is Largest Number </h1>`
+    }
+}
+
+
+function math(a,b) {
+    result.innerHTML = `<h1> ${Math.max(a,b)} "is the Largest Number"</h1>`;
+}
+    
+
+
+function op(a,b) {
+    result.innerHTML = `<h1> ${ max = (a > b) ? a : b}  "is the Largest Number" </h1>`;
+}
+
+
+function submitHandler(event){
+    event.preventDefault();
+    let a = Number(inp1.value);
+    let b = Number(inp2.value);
+
+
+    switch(logic.value) {
+        case "condition": condi(a,b);
+            break;
+        case "math": math(a,b);
+            break;
+        case "operator": op(a,b);
+            break;
+        default: result.innerHTML = `<h1>Select Proper Method</h1>`
+    }
+}
+    </script>
+
+</body>
+</html>

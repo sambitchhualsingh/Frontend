@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            border: none;
+            width: 100%;
+            
+        }
+        td, th{
+            border: 1px solid #000;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+        th{
+            background: rgb(93, 8, 204);
+            color: #fff;
+        }
+    </style>
+   
+</head>
+<body>
+    
+
+    <table cellspacing="0">
+        <tr>
+            <th>Si no</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+        <tbody id="insertHear">
+
+        </tbody>
+       
+    </table>
+
+    <script>
+        // js promis constructore has 4 states 
+        // 1)fullfiled
+        // 2)rejected
+        // 3)pending
+        // 4)setteld
+
+    fetch(`https://dummyjson.com/products`)
+
+    .then(response => response.json())
+    .then(res => {
+        console.log('res = ',res)
+        console.log("result", res)
+        print(res.products);
+        for(let key in res){
+            console.log(key)
+        }
+    })
+    .catch(err => console.log(err.message));
+
+    let myTable = document.querySelector("#insertHear");
+  
+
+    function print(data){
+        data.forEach(items => {
+            console.log(data.items);
+           
+            let element = document.createElement('tr');
+            let td1=document.createElement('td');
+            let td2=document.createElement('td');
+            let td3=document.createElement('td');
+            let td4=document.createElement('td');
+           
+           
+            
+             //add text content
+            td1.textContent = items.id;
+            td2.textContent = items.title;
+            td3.textContent = items.price;
+            td4.textContent = items.stock;
+
+
+           //appending to main code
+            element.appendChild(td1); 
+            element.appendChild(td2);
+            element.appendChild(td3);            
+            element.appendChild(td4); 
+           
+            myTable.appendChild(element); 
+            // blk.appendChild(h1)         
+        });
+
+    }
+    </script>
+   
+</body>
+</html>
