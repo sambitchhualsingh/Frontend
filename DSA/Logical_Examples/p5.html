@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exp1 =>   5x+3y - 2 = ?</h1>
+    <h1>exp2 =>   3x2 +4x - 12 = ?</h1>
+    <h1>exp3 =>   4x2 + 3xy - 4x + 8</h1>
+    <button onclick="expression1()">expression1</button>
+    <button onclick="expression2()">expression2</button>
+    <button onclick="expression3()">expression3</button>
+    <script>
+       function expression1(){
+        let x = Number(prompt("enter the x value:"));
+        let y = Number(prompt("enter the y value:"));
+
+        document.write(`<h1> the rhs of given expression1 is ${(5*x)+(3*y)-2}<h1>`);
+       }
+
+       function expression2(){
+        let x = Number(prompt("enter the x value:"));
+        document.write(`<h1> the rhs of given expression2 is ${(3*x*2)+(4*x)-12}<h1>`);
+       }
+
+       function expression3(){
+        let x  = Number(prompt("enter the x value:"));
+        let y = Number(prompt("enter the y value:"));
+
+        document.write(`<h1> the rhs of given expression3 is ${(4*x*x)+(3*x*y)-(4*x)+8} </h1>`);
+       }
+    </script>
+</body>
+</html>

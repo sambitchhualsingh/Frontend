@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>W.A.P to find Area of Shapes</h1>
+
+    <h3>Square = s * s</h3>
+    <h3>Circle = pi * r * r  </h3>
+    <h3>Rectangle = l * b</h3>
+    <h3>Triangle = 1/2 bh</h3>
+
+    <div>
+        <label for="op">Choose shapes</label>
+        <select name="op" id="op" onchange="selHandler()">
+            <option value="null">Choose Shapes</option>
+            <option value="square">Square</option>
+            <option value="circle">Circle</option>
+            <option value="rect">Rectangle</option>
+            <option value="tri">Triangle</option>
+        </select>
+    </div>
+
+    <hr>
+    <h3 id="output"></h3>
+
+    <script src="./js/p3.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/05-Celsius to Fahrenheit/style.css">
+</head>
+<body>
+        <h1>Convert the celsius to Fahrenheit  and Vice versa</h1>
+        <div>
+            <form id="myform">
+                <label for="">Enter a temperature as input</label>
+                <input type="text" name="temp" id="temp" placeholder="Enetr a temperature" required>
+                <br><br>
+
+                <label for="">Convrsion Type</label>
+                <select name="con" id="con">
+                    <option value="null">Choose Conversion type</option>
+                    <option value="farToCel"> Fahrenheit to Celsius </option>
+                    <option value="CeltoFar">Celsius to Fahrenheit</option>
+                </select>
+                <br><br>
+                <button type="button" onclick="celToFar()">Convert</button>
+                <br><br>
+            </form>
+        </div>
+    
+        <p id="result"></p>
+    <script src="./js/p8.js"></script>
+</body>
+</html>
