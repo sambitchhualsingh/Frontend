@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>W.A.P Prime Number?</h1>
+
+    <div>
+        <form autocomplete="off" onsubmit="submithandler(event)">
+            <div>
+                <label for="num">Enter Number</label>
+                <input type="number" name="num" id="num" required>
+            </div>
+            <div>
+                <label for="method">Method type</label>
+                <select name="method" id="method">
+                    <option value="null">Choose Method</option>
+                    <option value="loop">Using Condition</option>
+                    <option value="rec">Recursive Method</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="btn">
+            </div>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="./js/p14.js"></script>
+</body>
+</html>

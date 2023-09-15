@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>W.A.P Factorial of Number?</h1>
+    <p>!6 = 6*5*4*3*2*1 </p>
+
+    <div>
+        <form autocomplete="off" onsubmit="submithandler(event)">
+            <div>
+                <label for="num">Enter Number</label>
+                <input type="number" name="num" id="num" required>
+            </div>
+            <div>
+                <label for="method">Method type</label>
+                <select name="method" id="method">
+                    <option value="null">Choose Method</option>
+                    <option value="rec">Recursive Method</option>
+                    <option value="for">Using for Loop</option>
+                    <option value="while">Using while Loop</option>
+                    <option value="ternary">Using ternary Operator</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="btn">
+            </div>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="./js/p13.js"></script>
+</body>
+</html>

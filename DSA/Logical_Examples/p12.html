@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .success { color: green; }
+        .error { color: orangered; }
+    </style>
+</head>
+<body>
+    <h1>W.A.P Entered input is A-Z a-z </h1>
+
+    <p>str.match(/[a-zA-Z]/)  or   Reg exp x = /^[a-zA-z]$/  x.test(input) </p>
+
+    <div>
+        <form autocomplete="off">
+            <div>
+                <label for="user">Enter letters</label>
+                <input type="text" name="user" id="user" onkeyup="validateUser()" required>
+                <strong id="status"></strong>
+            </div>
+            <div>
+                <input type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/p12.js"></script>
+</body>
+</html>

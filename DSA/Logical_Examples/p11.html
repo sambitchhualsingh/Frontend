@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>W.A.P to Sign of Entered Number?</h1>
+    <p> -10 and 12</p>
+
+
+    <div>
+        <form autocomplete="off" onsubmit="submitHandler(event)">
+        
+            <div>
+                <label for="num">Enter Number</label>
+                <input type="number" name="num" id="num" required>
+            </div>
+
+            <div>
+                <label for="method">Method Type</label>
+                <select name="method" id="method">
+                    <option value="null">Choose Method</option>
+                    <option value="op">Operator</option>
+                    <option value="cons">Math Constructor</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="submit" class="btn">
+            </div>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="./js/p11.js"></script>
+</body>
+</html>
